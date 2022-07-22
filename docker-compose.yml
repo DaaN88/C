@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: c-plus-plus
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    container_name: c-plus-plus
+    working_dir: /src
+    volumes:
+      - .:/src
+    networks:
+      - cplusplus
+    entrypoint: /bin/sh
+
+networks:
+  cplusplus:
+    driver: bridge
