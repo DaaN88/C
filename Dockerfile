@@ -6,7 +6,7 @@ RUN apk update && apk add --no-cache \
     nano \
     vim \
     sudo \
-	cmake \
+    cmake \
     git \
     perl \
     unzip \
@@ -16,7 +16,7 @@ RUN apk update && apk add --no-cache \
     libc-dev \
     boost-dev \
     boost-static \
-	python3
+    python3
 
 RUN python3 -m ensurepip
 RUN pip3 install --no-cache --upgrade pip setuptools
