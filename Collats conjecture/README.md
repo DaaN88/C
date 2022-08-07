@@ -1,6 +1,7 @@
 Strange algorithm.
 
-Consider an algorithm that takes a positive integer as input number n. If n is even, then the algorithm divides it by two, and if it is odd, then cuts by three and adds 1. For example, for n = 3 we get the following subsequence:
+Consider an algorithm that takes a positive integer as input number <code>n</code>. If n is even, then the algorithm divides it by two, and if it is odd, then cuts by three and adds 1.
+For example, for n = 3 we get the following subsequence:
 3 -> 10 -> 5 -> 16 -> 8 -> 4 -> 2 -> 1
 
 Remarks:
